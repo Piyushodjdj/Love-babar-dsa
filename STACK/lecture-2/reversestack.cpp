@@ -3,8 +3,6 @@
 using namespace std;
 void solve(stack<int> &s,int target)
 {
-
-
 if(s.empty())
 {
     s.push(target);
@@ -16,10 +14,6 @@ s.pop();
 solve(s,target);
 
 s.push(top);
-
-
-
-
 
 }
 

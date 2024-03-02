@@ -2,6 +2,7 @@
 using namespace std;
 #include<stack>
 #include<string.h>
+//REVERSE A STRING USING STACK
 int main()
 {
 

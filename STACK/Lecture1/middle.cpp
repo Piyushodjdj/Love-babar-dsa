@@ -1,8 +1,6 @@
 #include<iostream>
 #include<stack>
 using namespace std;
-
-
 void print(stack<int> &s,int size)
 {
 if(s.size()==size/2+1)
@@ -19,11 +17,6 @@ print(s,size);
 
 
 s.push(temp);
-
-
-
-
-
 }
 
 
