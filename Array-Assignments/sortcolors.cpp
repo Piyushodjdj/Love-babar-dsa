@@ -66,38 +66,35 @@ vector<int>arr{2,1,0,2,1,1,0};
 //three pointers
 
 
-int start=0;
-int end=arr.size()-1;
-int mid=0;
-while(mid<=end)
-{
-if(arr[mid]==0)
-{
-    swap(arr[mid],arr[start]);
-    start++;
-    mid++;
-    
+int start = 0;
+int mid = 0;
+int end = arr.size() - 1;
 
-}
-else if(arr[mid]==1)
-{
-    mid++;
-}
-else
-if(arr[mid]==2)
-{
-    swap(arr[mid],arr[end]);
-    end--;
+while (mid <= end) {
+    if (arr[mid] == 0) {
+        swap(arr[start], arr[mid]);
+        mid++;
+        start++;
+    } else {
+        if (arr[mid] == 1) {
+            mid++;
+        } else {
+            if (arr[mid] == 2) {
+                swap(arr[end], arr[mid]);
+                end--;
+            }
+        }
+    }
 }
 
 
-}
-for(auto x:arr)
+
+
+
+for(auto val:arr)
 {
-    cout<<x;
+ cout<<val;
 }
-
-
 
 
 
@@ -110,4 +107,41 @@ for(auto x:arr)
 
 
     return 0;
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
